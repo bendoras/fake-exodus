@@ -160,6 +160,7 @@ class FakeExodusWallet:
         except Exception as e:
             logging.error(f"Error importing data: {e}")
             messagebox.showerror("Error", f"Error importing data: {e}")
+# updating statistic coin balance value
 
     def update_statistics(self):
         self.statistics_text.delete(1.0, tk.END)
