@@ -55,6 +55,8 @@ class FakeExodusWallet:
         self.create_settings_options()
         logging.info("Created all widgets.")
 
+    # settings options for ui
+    
     def create_settings_options(self):
         self.reset_balances_button = tk.Button(self.settings_frame, text="Reset All Balances", command=self.reset_balances)
         self.reset_balances_button.pack(pady=5)
